@@ -8,7 +8,7 @@
 Summary:	MIME::Types Perl module
 Summary(pl):	Modu³ Perla MIME::Types
 Name:		perl-MIME-Types
-Version:	1.002
+Version:	1.003
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
