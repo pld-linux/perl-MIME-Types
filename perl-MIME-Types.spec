@@ -10,7 +10,8 @@ Summary(pl):	Modu³ Perla MIME::Types
 Name:		perl-MIME-Types
 Version:	1.12
 Release:	1
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	0ce30c0b108624004c93c38b9456f549
