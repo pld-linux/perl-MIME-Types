@@ -8,12 +8,12 @@
 Summary:	MIME::Types Perl module
 Summary(pl):	Modu³ Perla MIME::Types
 Name:		perl-MIME-Types
-Version:	1.005
-Release:	2
+Version:	1.07
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	3f9f1ffbb2ad4da64ac3c81dc4b99c2b
+# Source0-md5:	bc55278f9adc01d7478615105b312de6
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	perl-libnet
 BuildRequires:	rpm-perlprov >= 4.1-13
