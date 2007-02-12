@@ -6,7 +6,7 @@
 %define		pdir	MIME
 %define		pnam	Types
 Summary:	MIME::Types Perl module - definition of MIME types
-Summary(pl):	Modu≥ Perla MIME::Types - definicje typÛw MIME
+Summary(pl.UTF-8):   Modu≈Ç Perla MIME::Types - definicje typ√≥w MIME
 Name:		perl-MIME-Types
 Version:	1.18
 Release:	1
@@ -32,15 +32,15 @@ This module maintains a set of MIME::Type objects, which each describe
 one known MIME type. There are many types defined by RFCs and vendors,
 so the list is long but not complete.
  
-%description -l pl
-Typy MIME s± uøywane w liniach nag≥Ûwka zgodnych z MIME, na przyk≥ad
-jako czÍ∂Ê transmisji e-mail lub HTTP, do okre∂lenia rodzaju
-przesy≥anej tre∂ci. Czasem potrzebna jest znajomo∂Ê prawdziwego
+%description -l pl.UTF-8
+Typy MIME sƒÖ u≈ºywane w liniach nag≈Ç√≥wka zgodnych z MIME, na przyk≈Çad
+jako czƒô≈õƒá transmisji e-mail lub HTTP, do okre≈õlenia rodzaju
+przesy≈Çanej tre≈õci. Czasem potrzebna jest znajomo≈õƒá prawdziwego
 mime-type.
 
-Ten modu≥ utrzymuje zbiÛr obiektÛw MIME::Type, z ktÛrych kaødy opisuje
-jeden znany typ MIME. Zawiera wiele typÛw zdefiniowanych przez RFC i
-producentÛw, wiÍc lista jest d≥uga, ale niepe≥na.
+Ten modu≈Ç utrzymuje zbi√≥r obiekt√≥w MIME::Type, z kt√≥rych ka≈ºdy opisuje
+jeden znany typ MIME. Zawiera wiele typ√≥w zdefiniowanych przez RFC i
+producent√≥w, wiƒôc lista jest d≈Çuga, ale niepe≈Çna.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
