@@ -6,7 +6,7 @@
 %define		pdir	MIME
 %define		pnam	Types
 Summary:	MIME::Types Perl module - definition of MIME types
-Summary(pl.UTF-8):   Moduł Perla MIME::Types - definicje typów MIME
+Summary(pl.UTF-8):	Moduł Perla MIME::Types - definicje typów MIME
 Name:		perl-MIME-Types
 Version:	1.18
 Release:	1
