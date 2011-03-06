@@ -8,13 +8,13 @@
 Summary:	MIME::Types Perl module - definition of MIME types
 Summary(pl.UTF-8):	Moduł Perla MIME::Types - definicje typów MIME
 Name:		perl-MIME-Types
-Version:	1.28
+Version:	1.31
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/MIME/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	5fe537d9d803c43a36c3c55623c2d6da
+Source0:	http://www.cpan.org/modules/by-module/MIME/MARKOV/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	d4435eb012e813682f94d285b40339ce
 URL:		http://search.cpan.org/dist/MIME-Types/
 %{?with_tests:BuildRequires:	perl-Test-Simple >= 0.47}
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -58,7 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-rm -f $RPM_BUILD_ROOT%{perl_vendorlib}/MIME/*.pod
+%{__rm} $RPM_BUILD_ROOT%{perl_vendorlib}/MIME/*.pod
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -66,6 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README
-%{perl_vendorlib}/MIME/Types.pm
 %{perl_vendorlib}/MIME/Type.pm
-%{_mandir}/man3/*
+%{perl_vendorlib}/MIME/Types.pm
+%{_mandir}/man3/MIME::Type.3pm*
+%{_mandir}/man3/MIME::Types.3pm*
