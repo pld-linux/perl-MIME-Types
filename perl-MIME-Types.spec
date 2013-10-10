@@ -8,13 +8,13 @@
 Summary:	MIME::Types Perl module - definition of MIME types
 Summary(pl.UTF-8):	Moduł Perla MIME::Types - definicje typów MIME
 Name:		perl-MIME-Types
-Version:	1.34
+Version:	2.04
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/MIME/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	87c496480e463c0b7792e7f5429e50d1
+# Source0-md5:	e292bbf7756bb4999407f3f660697168
 URL:		http://search.cpan.org/dist/MIME-Types/
 %{?with_tests:BuildRequires:	perl-Test-Simple >= 0.47}
 BuildRequires:	perl-devel >= 1:5.8.0
