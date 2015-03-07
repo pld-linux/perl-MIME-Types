@@ -42,6 +42,21 @@ Ten moduł utrzymuje zbiór obiektów MIME::Type, z których każdy opisuje
 jeden znany typ MIME. Zawiera wiele typów zdefiniowanych przez RFC i
 producentów, więc lista jest długa, ale niepełna.
 
+%package -n perl-MojoX-MIME-Types
+Summary:	MojoX::MIME::Types - MIME Types for Mojolicious
+Summary(pl.UTF-8):	MojoX::MIME::Types - typy MIME dla szkieletu Mojolicious
+Group:		Development/Languages/Perl
+Requires:	%{name} = %{version}-%{release}
+
+%description -n perl-MojoX-MIME-Types
+This module is a drop-in replacement for Mojolicious::Types, but with
+a more correct handling plus a complete list of types... a huge list
+of types.
+
+%description -n perl-MojoX-MIME-Types -l pl.UTF-8
+Ten moduł to zamiennik Mojolicious::Types, ale z bardziej poprawną
+obsługą oraz pełną listą typów... bardzo dużą listą typów.
+
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
@@ -59,6 +74,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 %{__rm} $RPM_BUILD_ROOT%{perl_vendorlib}/MIME/*.pod
+%{__rm} $RPM_BUILD_ROOT%{perl_vendorlib}/MojoX/MIME/Types.pod
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -71,6 +87,9 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorlib}/MIME/types.db
 %{_mandir}/man3/MIME::Type.3pm*
 %{_mandir}/man3/MIME::Types.3pm*
-# move it to separate package if ever needed
-#%{perl_vendorlib}/MojoX/MIME/Types.pm
-#%{_mandir}/man3/MojoX::MIME::Types.3pm*
+
+%files -n perl-MojoX-MIME-Types
+%defattr(644,root,root,755)
+%dir %{perl_vendorlib}/MojoX/MIME
+%{perl_vendorlib}/MojoX/MIME/Types.pm
+%{_mandir}/man3/MojoX::MIME::Types.3pm*
