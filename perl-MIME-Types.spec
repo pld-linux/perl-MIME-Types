@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	MIME
 %define		pnam	Types
 Summary:	MIME::Types Perl module - definition of MIME types
